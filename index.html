@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Proposal: AI Solutions for Wafeq</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8fafc; /* bg-slate-50 */
+        }
+        .stat-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2.5rem;
+            padding-left: 2.5rem; 
+            border-left: 2px solid #0077B6;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -0.7rem;
+            top: 0;
+            height: 1.25rem;
+            width: 1.25rem;
+            background-color: #00B4D8;
+            border-radius: 9999px;
+            border: 2px solid white;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #0077B6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        /* Styles for formatted response */
+        .prose p {
+            margin-bottom: 1rem;
+        }
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .prose li {
+            margin-bottom: 0.5rem;
+        }
+        .prose strong {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#0077B6] mb-2">AI-Powered Innovation for Wafeq</h1>
+            <p class="text-lg text-gray-600">Revolutionizing SME Accounting Through Intelligent Automation and Proactive Financial Management</p>
+        </header>
+
+        <main class="space-y-16">
+
+            <section id="summary" class="p-6 md:p-8 bg-white rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-[#003459] mb-6 text-center">Executive Summary</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-[#0077B6] mb-3">Market Position</h3>
+                        <p class="text-gray-700">Wafeq serves over <span class="font-bold">12,000 companies</span> in the GCC with comprehensive accounting solutions, achieving a <span class="font-bold">4.8/5</span> satisfaction rating.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#0077B6] mb-3">Key Pain Points</h3>
+                        <p class="text-gray-700">Users face significant challenges with <span class="font-bold text-red-600">reconciliation delays</span> and <span class="font-bold text-red-600">forgotten bills</span>, impacting operational efficiency and cash flow.</p>
+                    </div>
+                    <div class="md:col-span-2">
+                        <h3 class="text-xl font-bold text-[#0077B6] mb-3">Proposed AI Solutions</h3>
+                        <p class="text-gray-700">We propose developing three integrated solutions: a <span class="font-bold">"Smart Reconciler"</span>, a <span class="font-bold">"Forgotten Bill Detection System"</span>, and a <span class="font-bold">"Wafeq Copilot"</span> to provide an unparalleled accounting experience.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="solution1">
+                <h2 class="text-3xl font-bold text-[#003459] mb-2 text-center">Solution 1: Smart Reconciler</h2>
+                <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Transforming one of accounting's most tedious tasks into an intelligent, automated process that learns from user behavior and improves over time.</p>
+                <div class="bg-white p-8 rounded-lg shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-bold text-[#0077B6]">How It Works?</h3>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-2xl text-[#00B4D8]"><i class="fas fa-brain"></i></div>
+                            <div><h4 class="font-bold">Advanced Pattern Recognition</h4><p class="text-sm">ML algorithms analyze historical transaction patterns to identify matches beyond simple rules.</p></div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-2xl text-[#00B4D8]"><i class="fas fa-lightbulb"></i></div>
+                            <div><h4 class="font-bold">Context-Aware Suggestions</h4><p class="text-sm">Intelligent recommendations for unmatched transactions with confidence scoring.</p></div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-2xl text-[#00B4D8]"><i class="fas fa-sync-alt"></i></div>
+                            <div><h4 class="font-bold">Continuous Learning</h4><p class="text-sm">The system improves its accuracy by learning from user corrections and feedback.</p></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#0077B6] mb-4 text-center">Expected Impact</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="stat-card"><p class="text-3xl font-extrabold text-[#0077B6]">+50%</p><p class="font-bold">Reduction in reconciliation time</p></div>
+                            <div class="stat-card"><p class="text-3xl font-extrabold text-[#0077B6]">+90%</p><p class="font-bold">Automated match accuracy</p></div>
+                            <div class="stat-card"><p class="text-3xl font-extrabold text-[#0077B6]">-75%</p><p class="font-bold">Fewer manual interventions</p></div>
+                            <div class="stat-card"><p class="text-3xl font-extrabold text-[#0077B6]">24/7</p><p class="font-bold">Continuous processing</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="solution2">
+                <h2 class="text-3xl font-bold text-[#003459] mb-2 text-center">Solution 2: Forgotten Bill Detection System</h2>
+                <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Transforming accounts payable from a reactive task into a managed process, safeguarding businesses from late fees and damaged relationships.</p>
+                <div class="bg-white p-8 rounded-lg shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold text-[#0077B6] mb-4 text-center">Key Benefits</h3>
+                         <div class="grid grid-cols-1 gap-4">
+                            <div class="stat-card"><i class="fas fa-coins text-3xl text-[#0077B6] mb-2"></i><h4 class="font-bold">Cost Reduction</h4><p class="text-sm">Eliminate late payment fees and optimize cash flow management.</p></div>
+                            <div class="stat-card"><i class="fas fa-handshake text-3xl text-[#0077B6] mb-2"></i><h4 class="font-bold">Better Supplier Relations</h4><p class="text-sm">Strengthen partnerships through timely payments.</p></div>
+                            <div class="stat-card"><i class="fas fa-clock text-3xl text-[#0077B6] mb-2"></i><h4 class="font-bold">Time Savings</h4><p class="text-sm">Automated tracking and reminders free up valuable accounting time.</p></div>
+                        </div>
+                    </div>
+                     <div class="space-y-4">
+                        <h3 class="text-xl font-bold text-[#0077B6]">Proactive Bill Management</h3>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-2xl text-[#00B4D8]"><i class="fas fa-calendar-check"></i></div>
+                            <div><h4 class="font-bold">Automated Due Date Tracking</h4><p class="text-sm">NLP extracts payment terms and due dates from invoices automatically.</p></div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-2xl text-[#00B4D8]"><i class="fas fa-bell"></i></div>
+                            <div><h4 class="font-bold">Intelligent Reminders</h4><p class="text-sm">Tiered alerts based on urgency, amount, and supplier importance.</p></div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-2xl text-[#00B4D8]"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div><h4 class="font-bold">Risk Prioritization</h4><p class="text-sm">AI ranks bills by potential impact and learns from payment patterns.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="solution3">
+                <h2 class="text-3xl font-bold text-[#003459] mb-2 text-center">Solution 3: Wafeq Copilot</h2>
+                <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Integrating all intelligent capabilities into a single conversational interface, acting as a strategic partner for the user to answer queries and execute tasks.</p>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-[#0077B6] mb-6 text-center">Core Copilot Capabilities</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                        <div class="stat-card">
+                            <i class="fas fa-question-circle text-4xl text-[#0077B6] mb-3"></i>
+                            <h4 class="font-bold text-lg">Instant & Accurate Answers</h4>
+                            <p class="text-sm">Answers user questions on how to use the platform, powered by Wafeq's knowledge base (using RAG technology).</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-magic text-4xl text-[#0077B6] mb-3"></i>
+                            <h4 class="font-bold text-lg">Task Execution via Commands</h4>
+                            <p class="text-sm">Allows users to execute actions like 'Create an invoice for client X' or 'Show me the P&L report' via voice or text commands.</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-chart-line text-4xl text-[#0077B6] mb-3"></i>
+                            <h4 class="font-bold text-lg">Analysis & Insights</h4>
+                            <p class="text-sm">Analyzes user's financial data to provide proactive insights, such as 'Your profit margin decreased this month due to higher shipping costs.'</p>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <h3 class="text-xl font-bold text-[#0077B6] mb-4 text-center">✨ Try the Wafeq Copilot</h3>
+                        <div class="max-w-2xl mx-auto bg-slate-100 p-6 rounded-lg">
+                            <div class="mb-4">
+                                <textarea id="copilotQuery" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0077B6] focus:outline-none" rows="3" placeholder="Ask anything about Wafeq... e.g., 'How do I add a new employee to the payroll?'"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button id="askCopilotBtn" class="bg-[#0077B6] text-white font-bold py-2 px-6 rounded-lg hover:bg-[#005A8D] transition-colors duration-300">
+                                    <i class="fas fa-paper-plane mr-2"></i> Send
+                                </button>
+                            </div>
+                            <div id="copilotResult" class="mt-6 p-4 bg-white rounded-lg min-h-[100px]" style="display: none;">
+                                <div id="loader" class="loader" style="display: none;"></div>
+                                <div id="copilotResponse" class="prose"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="roadmap" class="p-6 md:p-8 bg-white rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-[#003459] mb-8 text-center">Implementation Roadmap</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="timeline-item" style="border-image: linear-gradient(to bottom, #0077B6, #00B4D8) 1;">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold text-[#0077B6]">Phase 1: Foundation (Months 1-3)</h3>
+                        <p class="text-gray-600">Develop core AI models for the three solutions, build the Copilot's knowledge base (RAG), and establish the security framework.</p>
+                    </div>
+                    <div class="timeline-item" style="border-image: linear-gradient(to bottom, #0077B6, #00B4D8) 1;">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold text-[#0077B6]">Phase 2: Beta Testing (Months 4-6)</h3>
+                        <p class="text-gray-600">Limited release for the three solutions, gather user feedback, and refine model accuracy and the Copilot's command understanding.</p>
+                    </div>
+                    <div class="timeline-item border-l-transparent md:border-r-transparent">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold text-[#0077B6]">Phase 3: Full Launch (Months 7-9)</h3>
+                        <p class="text-gray-600">Platform-wide release, training programs, and ongoing optimization of all features.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+<script>
+    const askCopilotBtn = document.getElementById('askCopilotBtn');
+    const copilotQuery = document.getElementById('copilotQuery');
+    const copilotResult = document.getElementById('copilotResult');
+    const copilotResponse = document.getElementById('copilotResponse');
+    const loader = document.getElementById('loader');
+
+    function formatResponse(text) {
+        // Basic security: escape HTML characters
+        let safeText = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+        // Process Markdown-like syntax
+        let html = '';
+        const lines = safeText.split('\n');
+        let inList = false;
+
+        for (const line of lines) {
+            if (line.trim().startsWith('* ')) {
+                if (!inList) {
+                    html += '<ul>';
+                    inList = true;
+                }
+                // Process bold within list items
+                const itemText = line.trim().substring(2).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                html += `<li>${itemText}</li>`;
+            } else {
+                if (inList) {
+                    html += '</ul>';
+                    inList = false;
+                }
+                if (line.trim() !== '') {
+                    // Process bold within paragraphs
+                    const paragraphText = line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                    html += `<p>${paragraphText}</p>`;
+                }
+            }
+        }
+
+        if (inList) {
+            html += '</ul>';
+        }
+
+        return html;
+    }
+
+    askCopilotBtn.addEventListener('click', async () => {
+        const query = copilotQuery.value;
+        if (!query) {
+            copilotResponse.innerHTML = '<p>Please enter a question to get an answer.</p>';
+            copilotResult.style.display = 'block';
+            return;
+        }
+
+        copilotResult.style.display = 'block';
+        loader.style.display = 'block';
+        copilotResponse.innerHTML = '';
+        askCopilotBtn.disabled = true;
+
+        try {
+            const prompt = `You are 'Wafeq Copilot', an expert assistant specializing in the 'Wafeq' accounting platform. You have been exclusively trained on the Wafeq help center database and internal documentation. Your task is to answer user questions related to the Wafeq platform only, based on the following query: "${query}". If the question is not about Wafeq or its features, answer with 'I specialize only in answering questions related to the Wafeq platform. How can I help you with Wafeq today?'. Format your answers clearly using paragraphs, bold text with asterisks (**bold**), and lists with asterisks (* item).`;
+            
+            let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+            const payload = { contents: chatHistory };
+            const apiKey = "AIzaSyABu4Rr4upwVFqwscs-M1g6aWLm0umUeZw"; // The API key will be provided by the environment.
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+            
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            
+            const result = await response.json();
+            
+            if (result.candidates && result.candidates.length > 0 &&
+                result.candidates[0].content && result.candidates[0].content.parts &&
+                result.candidates[0].content.parts.length > 0) {
+                const text = result.candidates[0].content.parts[0].text;
+                copilotResponse.innerHTML = formatResponse(text);
+            } else {
+                copilotResponse.innerHTML = '<p>Sorry, an error occurred while trying to get an answer. Please try again.</p>';
+            }
+
+        } catch (error) {
+            console.error('Error calling Gemini API:', error);
+            copilotResponse.innerHTML = '<p>Sorry, the service is currently unavailable. Please check your internet connection and try again.</p>';
+        } finally {
+            loader.style.display = 'none';
+            askCopilotBtn.disabled = false;
+        }
+    });
+</script>
+
+</body>
+</html>
